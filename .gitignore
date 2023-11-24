@@ -1,18 +1,436 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prorrogação</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
 
-# Other files and folders
-.settings/
+<div align="center">	
+	<img src="1.jpg" style="height: 100px">
+</div>
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+<p style="text-align: center;">
+	
+	<strong>MINISTÉRIO DA DEFESA</strong>
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+	<h2 style="font-size:19px;font-style: italic;font-weight: bold;text-align: center;">EXÉRCITO BRASILEIRO</h2>
+
+	<strong>CMS - 3ªRM</strong>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'>&ldquo;<strong>REGIÃO D. DIOGO DE SOUZA&rdquo;</strong></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><u><strong>HOSPITAL MILITAR DE ÁREA DE PORTO ALEGRE</strong></u></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><span size="2" style="font-size:15px;"><strong>(&nbsp;</strong></span><u><strong>H Mil 2&ordf; Cl / 1890 )</strong></u></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><br></p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-top: 0.49cm;'>Assunto: Autorização para emiss&atilde;o de guia no Sire OCS/FuSEx&nbsp;</p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-top: 0.49cm;'>Ref: - DIEx n&ordm; 1-SSPA/Sdir Tec/Gabdir-CIRCULAR de 26Mar12 do Vice-Chefe do DGP.</p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-top: 0.49cm;'>DIEx n&ordm; 19-SSPA/Sdir Tec/Gabdir-CIRCULAR de 18Abr12 do Vice-Chefe do DGP.</p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-top: 0.49cm;'><br></p>
+</p>
+
+
+
+
+
+<div align="center">
+		<table border="1" style="height: 2px">
+			<tbody>
+				<tr>
+					<td><strong>NOME BENEFICIÁRIO:<input style="width: 40%" id="nome1"></strong></td>
+				</tr>
+				<tr>
+					<td>
+						<strong>POST/GRAD: <input id="postograduacao1"></strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>PREC CP/PASS:<input id="preccp1"></strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<strong>IDADE:<input style="width: 3%" id="idade1"></strong> anos
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>OM de Vinculação:</strong><input type="text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>OCS CREDENCIADA:<input id="ocscredenciada1"></strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>NOME DO PROCEDIMENTO/EXAME:</strong></span><span style="color: rgb(34, 34, 34);">Internação Psiquiátrica</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>URGÊNCIA OU EMERGÊNCIA:</strong> <input type="checkbox" id="parent">SIM OU <input type="checkbox" id="parent">NÃO
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>DATA DA INTERNAÇÃO: <input type="date" id="datainternacao1"></strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>PERIODO DE INTERNAÇÃO: <input type="date" id="periodode">&nbsp;até <input type="date" id="periodoate"></strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>VALOR ESTIMADO/SEM OPME:</strong> R$ 6.690,00
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>OPME:</strong> <input id="OPME1">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>PACOTE:</strong> <input id="pacote1">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>VALOR FINAL:</strong>R$ <input id="valorfinal1">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>INFORMAR SE E PRIMEIRA SOLICITAÇÃO GUIA: <input type="checkbox">SIM OU <input type="checkbox">NÃO </strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>INFORMAR Nº GUIA REFERENTE AUTORIZAÃO ANTERIOR: <input type="Nº"></strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>JUSTIFICATIVA:</strong><textarea name="campo"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Nº DO CONSELHO DO PROFISSIONAL SOLICITANTE:</strong> CRM <input type="" id="crm1">
+					</td>
+				</tr><tr>
+					<td>
+						<strong>PROFISSIONAL SOLICITANTE: <input type="text" id="profissionalsolicitante1"></strong>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+
+
+	<p><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-top: 0.49cm;margin-bottom: 0cm;line-height: 100%;text-align: center;">______________</p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-top: 0.49cm;margin-bottom: 0cm;line-height: 100%;text-align: center;">RODRIGO HENRIQUE <strong>PRADO</strong>- MAJ MED</p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-top: 0.49cm;margin-bottom: 0cm;line-height: 100%;text-align: center;">Ch Audioria Concorrente/ HMAPA.</p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-top: 0.49cm;margin-bottom: 0cm;line-height: 100%;text-align: center;"><br></p>
+
+
+
+
+
+	<hr>
+
+
+
+
+
+<div align="center">	
+	<img src="1.jpg" style="height: 100px">
+</div>
+
+
+
+
+
+
+
+
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: center;"><strong>MINISTÉRIO DA DEFESA</strong></p>
+	<h2 style="color: rgb(0, 0, 0);background: transparent;font-family: Arial, sans-serif;font-size:19px;font-style: italic;font-weight: bold;margin-top: 0cm;margin-bottom: 0cm;text-align: center;">EXÉRCITO BRASILEIRO</h2>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><strong>CMS - 3ªRM</strong></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'>&ldquo;<strong>REGIÃO D. DIOGO DE SOUZA&rdquo;</strong></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><u><strong>HOSPITAL MILITAR DE ÁREA DE PORTO ALEGRE</strong></u></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><span size="2" style="font-size:15px;"><strong>(&nbsp;</strong></span><u><strong>H Mil 2&ordf; Cl / 1890 )</strong></u></p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;'><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: right;">Porto Alegre, 25 de MES de 2023.</p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;"><br></p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;"><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: center;"><strong>ORÇAMENTO DE CONTAS MÉDICAS EM OCS</strong></p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;"><br></p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;"><br></p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;'><span size="2" style="font-size:15px;">Gastos estimados em enfermaria para o paciente <input style="width: 50%" type="text" id="nome2" readonly="readyonly"></span><span size="2" style="font-size:15px;"><strong>&nbsp;</strong></span></p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;'>para INTERNAÇÃO psiquiátrica.</p>
+	<p style='margin-bottom: 0cm; color: rgb(0, 0, 0); line-height: 100%; background: transparent; font-family: "Liberation Serif", serif; font-size: 16px; text-align: center;'><br></p>
+	<p style='margin-bottom: 0cm; color: rgb(0, 0, 0); line-height: 100%; background: transparent; font-family: "Liberation Serif", serif; font-size: 16px; text-align: center;'><br></p>
+	<p style='margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;font-family: "Liberation Serif", serif;font-size:16px;'><br></p>
+
+
+<div align="center">
+	<table border="1">
+		<tbody>
+			<tr>
+				<td>
+					<strong>GASTOS HOSPITALARES</strong>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					HONORÁRIOS MÉDICOS
+				</td>
+				<td>
+					R$ <input type="" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					HONORÁRIOS DE OUTROS PROFISSIONAIS
+				</td>
+				<td>
+					R$ <input type="" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					DIÁRIAS
+				</td>
+				<td>
+					R$ <input type="" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					MEDICAMENTOS
+				</td>
+				<td>
+					R$ <input type="" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong>TOTAL</strong>
+				</td>
+				<td>
+					R$ <input type="" name="">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+<div align="center">
+
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;"><br></p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;"><br></p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">______________</p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">RODRIGO HENRIQUE <strong>PRADO</strong>- MAJ MED</p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">Ch Auditoria Concorrente/ HMAPA.</p>
+	<p style="text-align: center;color: rgb(0, 0, 0);"><br></p>
+
+
+
+
+
+	<hr>
+
+
+
+
+
+
+
+	<div align="center">	
+	<img src="1.jpg" style="height: 100px">
+</div>
+
+
+
+
+
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: center;"><strong>MINISTÉRIO DA DEFESA</strong></p>
+	<h2 style="color: rgb(0, 0, 0);background: transparent;font-family: Arial, sans-serif;font-size:19px;font-style: italic;font-weight: bold;margin-top: 0cm;margin-bottom: 0cm;text-align: center;">EXÉRCITO BRASILEIRO</h2>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><strong>CMS - 3ª RM</strong></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'>&ldquo;<strong>REGIÃO D. DIOGO DE SOUZA&rdquo;</strong></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><u><strong>HOSPITAL MILITAR DE ÁREA DE PORTO ALEGRE</strong></u></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><span size="2" style="font-size:15px;"><strong>(&nbsp;</strong></span><u><strong>H Mil 2&ordf; Cl / 1890 )</strong></u></p>
+
+
+	
+
+	
+	
+	
+	
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 0.35cm;text-align: center;"><span style="color: rgb(0, 0, 10);"><u><strong>SolicitaÃo Médica para ProrrogaÃo de INTERNAÇÃO</strong></u></span></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 0.35cm;text-align: center;"><br>&nbsp;</p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: transparent;"><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: justify;"><span style="color: rgb(0, 0, 10);"><span size="2" style="font-size:15px;">Paciente</span><span style="color: rgb(0, 0, 0);">,&nbsp;</span>necessita de manutenção do tratamento psiquiátrico <input style="width: 50%" type="text" id="nome3" readonly="readyonly"></span></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: justify;"><span style="color: rgb(0, 0, 10);">Solicito prorrogação do tempo de INTERNAÇÃO no periodo que compreende de&nbsp;<input type="date" id="periodode2">&nbsp; até&nbsp;<input type="date" id="periodoate2"></span></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: right;">Porto Alegre, 25 de outubro de 2023.</p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">______________</p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">RODRIGO HENRIQUE <strong>PRADO</strong>- MAJ MED</p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">Ch Audioria Concorrente/ HMAPA.</p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+
+
+
+
+	<hr>
+
+
+
+
+
+
+<div align="center">	
+	<img src="1.jpg" style="height: 100px">
+</div>
+
+
+
+
+
+
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: center;"><strong>MINISTÉRIO DA DEFESA</strong></p>
+	<h2 style="color: rgb(0, 0, 0);background: transparent;font-family: Arial, sans-serif;font-size:19px;font-weight: bold;margin-top: 0cm;margin-bottom: 0cm;font-style: normal;text-align: center;">EXÉRCITO BRASILEIRO</h2>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><strong>CMS - 3ª RM</strong></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'>&ldquo;<strong>REGIÃO D. DIOGO DE SOUZA&rdquo;</strong></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><u><strong>HOSPITAL MILITAR DE ÁREA DE PORTO ALEGRE</strong></u></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><strong>(&nbsp;</strong><u><strong>H Mil 2&ordf; Cl / 1890 )</strong></u></p>
+	<p style='color: rgb(0, 0, 0);background: transparent;font-family: "Liberation Serif", serif;font-size:16px;margin-bottom: 0cm;line-height: 100%;text-align: center;'><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: center;"><span style="color: rgb(0, 0, 10);"><u><strong>RELATÓRIO MÉDICO</strong></u></span></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 0.18cm;text-align: center;"><br>&nbsp;</p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 100%;text-align: justify;"><u><strong>IDENTIFICAÇÃO: <input type="" name=""></strong></u></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 100%;text-align: justify;"><u><strong>DATA DE ADMISSÃO:<input type="date" id="datainternacao2"></strong></u>&nbsp;</p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 100%;text-align: justify;"><span size="2" style="font-size:15px;"><u><strong>LOCAL DE INTERNAÇÃO:<input type="" id="ocscredenciada2"></strong></u></span></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 100%;text-align: justify;"><span size="2" style="font-size:15px;"><u><strong>DATA DE ALTA:<input type="" name=""></strong></u></span><span size="2" style="font-size:15px;"><strong>&nbsp;</strong></span>&nbsp;</p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 100%;text-align: justify;"><span size="2" style="font-size:15px;"><u><strong>MOTIVO DA INTERNAÇÃO:<input type="" name=""></strong></u></span></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0.02cm;line-height: 100%;text-align: justify;"><u><strong>RELATÓRIO MÉDICO:<input type="" name=""></strong></u></p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: #ffffff;"><br></p>
+	<p style="margin-bottom: 0cm;color: #000000;line-height: 100%;background: #ffffff;"><br></p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-bottom: 0cm;line-height: 100%;text-align: right;">Porto Alegre, 25 de outubro ** 2023.</p>
+	<p style="color: rgb(0, 0, 0);background: transparent;margin-left: 1.25cm;text-indent: 0.08cm;margin-bottom: 0.02cm;line-height: 0.18cm;text-align: right;"><br>&nbsp;</p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">______________</p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">RODRIGO HENRIQUE <strong>PRADO</strong>- MAJ MED</p>
+	<p style="text-align: center;color: rgb(0, 0, 0);">Ch Audioria Concorrente/ HMAPA.</p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+	<p style="text-align: left; color: rgb(0, 0, 0);"><br></p>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$('#nome1').keyup(function(){
+    $('#nome2').val($(this).val());
+});
+
+$('#nome1').keyup(function(){
+    $('#nome3').val($(this).val());
+});
+
+$('#postograduacao1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#preccp1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#idade1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#ocscredenciada1').keyup(function(){
+    $('#ocscredenciada2').val($(this).val());
+});
+
+$('#parent').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#datainternacao1').keyup(function(){
+    $('#datainternacao2').val($(this).val());
+});
+
+$('#periodode').keyup(function(){
+    $('#periodode2').val($(this).val());
+});
+
+$('#periodoate').keyup(function(){
+    $('#periodoate2').val($(this).val());
+});
+
+$('#OPME1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#pacote1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#valorfinal1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#justificativa1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#crm1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+$('#profissionalsolicitante1').keyup(function(){
+    $('#........').val($(this).val());
+});
+
+ 
+
+</script>
+
+
+</body>
+</html>
